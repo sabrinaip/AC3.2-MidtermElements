@@ -14,6 +14,7 @@
 		4BE857251DF9E5020086231C /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE857241DF9E5020086231C /* APIRequestManager.swift */; };
 		4BE857271DF9E6FB0086231C /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE857261DF9E6FB0086231C /* Element.swift */; };
 		4BE857291DF9EDE80086231C /* ElementListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE857281DF9EDE80086231C /* ElementListTableViewController.swift */; };
+		4BE8572B1DF9F1D80086231C /* ElementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8572A1DF9F1D80086231C /* ElementDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4BE857241DF9E5020086231C /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		4BE857261DF9E6FB0086231C /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		4BE857281DF9EDE80086231C /* ElementListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementListTableViewController.swift; sourceTree = "<group>"; };
+		4BE8572A1DF9F1D80086231C /* ElementDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4BE857161DF9E4D90086231C /* Main.storyboard */,
 				4BE857261DF9E6FB0086231C /* Element.swift */,
 				4BE857281DF9EDE80086231C /* ElementListTableViewController.swift */,
+				4BE8572A1DF9F1D80086231C /* ElementDetailViewController.swift */,
 				4BE857191DF9E4D90086231C /* Assets.xcassets */,
 				4BE8571B1DF9E4D90086231C /* LaunchScreen.storyboard */,
 				4BE8571E1DF9E4D90086231C /* Info.plist */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE857291DF9EDE80086231C /* ElementListTableViewController.swift in Sources */,
+				4BE8572B1DF9F1D80086231C /* ElementDetailViewController.swift in Sources */,
 				4BE857251DF9E5020086231C /* APIRequestManager.swift in Sources */,
 				4BE857131DF9E4D90086231C /* AppDelegate.swift in Sources */,
 				4BE857271DF9E6FB0086231C /* Element.swift in Sources */,
