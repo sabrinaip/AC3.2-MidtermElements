@@ -33,27 +33,51 @@ class ElementDetailViewController: UIViewController {
         self.symbolLabel.text = element.symbol
         self.nameLabel.text = element.name
         self.weightLabel.text = String(element.weight)
-
     }
     
     func loadDetailsText() {
-        var detailsText = "Name: \(element.name)"
+        var detailsText = ""
+/*
+        // The following lines are not needed because they are accounted for
+        detailsText = "Name: \(element.name)"
         detailsText += "\nSymbol: \(element.symbol)"
         detailsText += "\nNumber: \(element.number)"
         detailsText += "\nWeight: \(element.weight)"
-        
+*/
         // If data is null, show null.
         if let meltingPoint = element.meltingPoint {
-            detailsText += "\nMelting Point: \(meltingPoint)"
+            detailsText += "Melting Point: \(meltingPoint)"
         } else {
-            detailsText += "\nMelting Point: Null"
+            detailsText += "Melting Point: Null"
         }
         if let boilingPoint = element.boilingPoint {
             detailsText += "\nBoiling Point: \(boilingPoint)"
         } else {
             detailsText += "\nBoiling Point: Null"
         }
-
+        if let density = element.density {
+            detailsText += "\nDensity: \(density)"
+        } else {
+            detailsText += "\nDensity: Null"
+        }
+        if let crustPercent = element.crustPercent {
+            detailsText += "\nCrust Percent: \(crustPercent)"
+        } else {
+            detailsText += "\nCrust Percent: Null"
+        }
+        detailsText += "\nDiscovery Year: \(element.discoveryYear)"
+        detailsText += "\nGroup: \(element.group)"
+        if let electrons = element.electrons {
+            detailsText += "\nElectrons: \(electrons)"
+        } else {
+            detailsText += "\nElectrons: Null"
+        }
+        if let ionEnergy = element.ionEnergy {
+            detailsText += "\nIon Energy: \(ionEnergy)"
+        } else {
+            detailsText += "\nIon Energy: Null"
+        }
+ 
         self.detailsLabel.text = detailsText
     }
     
