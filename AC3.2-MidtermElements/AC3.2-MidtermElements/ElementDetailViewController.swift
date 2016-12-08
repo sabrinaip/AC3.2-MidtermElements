@@ -14,11 +14,26 @@ class ElementDetailViewController: UIViewController {
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var elementImageView: UIImageView!
 
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var symbolLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var topView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = element.name
         loadDetailsText()
         loadImage()
+        loadSquareFormatText()
+    }
+    
+    func loadSquareFormatText() {
+        self.numberLabel.text = String(element.number)
+        self.symbolLabel.text = element.symbol
+        self.nameLabel.text = element.name
+        self.weightLabel.text = String(element.weight)
+
     }
     
     func loadDetailsText() {
