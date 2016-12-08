@@ -13,7 +13,6 @@ class ElementDetailViewController: UIViewController {
     var userName = "Sabrina"
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var elementImageView: UIImageView!
-
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -23,9 +22,9 @@ class ElementDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = element.name
+        loadSquareFormatText()
         loadDetailsText()
         loadImage()
-        loadSquareFormatText()
     }
     
     func loadSquareFormatText() {
